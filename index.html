@@ -36,16 +36,23 @@
 
 
     <!-- Saurabh Rajopadhye -->
+   
+    <!-- ---------------------------------Saurabh ------------------------------------------------ -->
     <div class="wrapper">
 
         <!-- left product bar -->
         <div class="proicons">
-            <img src="./images/img1.jpg" width="50px" height="50px">
-            <img src="./images/img2.jpg" width="50px" height="50px">
-            <img src="./images/img3.jpg" width="50px" height="50px">
-            <img src="./images/img4.jpg" width="50px" height="50px">
-            <img src="./images/img5.jpg" width="50px" height="50px">
-            <img src="./images/download (1).jpg" width="50px" height="50px">
+            <button onclick="targetSlide(0)" id="btn1"><img src="./images/img1.jpg" width="50px" height="45px"
+                    id="img1"></button>
+            <button onclick="targetSlide(1)" id="btn2"><img src="./images/img2.jpg" width="50px" height="45px"
+                    id="img2"></button>
+            <button onclick="targetSlide(2)" id="btn3"><img src="./images/img3.jpg" width="50px" height="45px"
+                    id="img3"></button>
+            <button onclick="targetSlide(3)" id="btn4"><img src="./images/img4.jpg" width="50px" height="45px"
+                    id="img4"></button>
+            <button onclick="targetSlide(4)" id="btn5"><img src="./images/img5.jpg" width="50px" height="45px"
+                    id="img5"></button>
+            <button onclick="targetVideo()"><img src="./images/download (1).jpg" width="50px" height="45px"></button>
         </div>
 
         <!-- middle image gallery -->
@@ -65,30 +72,141 @@
 
         <!-- right description bar -->
         <div class="prodesc">
-            <h1>Product Description bar</h1>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                industry's
-                standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it
-                to make
-                a type specimen book. It has survived not only five centuries, but also the leap into electronic
-                typesetting,
-                remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets
-                containing
-                Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including
-                versions
-                of Lorem Ipsum.
-            </p>
+            <h1>VOSTEY Men's Fashion Sneakers Breathable Casual Shoes Business Causal Flat</h1>
+            <div class="quality">
+                <a href="#" class="ratings">Ratings</a>
+                <i class="fa-solid fa-star fa-xl" style="color: #ffa500;"></i>
+                <i class="fa-solid fa-star fa-xl" style="color: #ffa500;"></i>
+                <i class="fa-solid fa-star fa-xl" style="color: #ffa500;"></i>
+                <i class="fa-solid fa-star fa-xl" style="color: #ffa500;"></i>
+                <i class="fa-solid fa-star-half-stroke fa-xl" style="color: #ffa500;"></i>
+                <a href="#" class="reviews">Reviews</a>
+            </div>
+            <ul>
+                <li>Rubber sole</li>
+                <li>The insole is made of high-density sponge material, soft and comfortable, effectively relieving foot
+                    pressure and walking with ease.</li>
+                <li>The upper is made of high-quality material, finely cut and stitched, presenting a simple and stylish
+                    casual style that can match both formal suits and casual jeans.</li>
+                <li>The lining is a perfect blend of texture and function, as it molds to the shape of your feet, keeps
+                    them from sliding, and provides a comfortable and stable fit. The lining is customized for you,
+                    making you feel elegant and confident with every step.</li>
+                <li>These casual dress shoes are versatile shoes that can make you look confident and elegant whether
+                    you are working, traveling, dating, partying or traveling. They are a pair of shoes that you can't
+                    miss in your wardrobe.</li>
+            </ul>
         </div>
     </div>
 
-    <div class="videoWrapper" id = "101">
-        <video width="32" height="240" controls muted >
+    <div class="videoWrapper" id="101">
+        <video muted id="vid1">
             <source src="./video/vid1.mp4" type="video/mp4">
         </video>
     </div>
 
+    <div class="vidControls">
+        <div class="vidBtns">
+            <button id="vidbtn1" onclick="toggleMute()"><i class="fa-solid fa-volume-low fa-2xl"></i></button>
+            <button id="vidbtn2" onclick="playVideo()"><i class="fa-solid fa-circle-play fa-2xl"></i></button>
+            <button id="vidbtn3" onclick="pauseVideo()"><i class="fa-solid fa-circle-pause fa-2xl"></i></button>
+        </div>
+    </div>
+
+
+    <!-- ---------------------------------Saurabh ------------------------------------------------ -->
 
     <!-- Aryan Magdum -->
+    <!-- ----------------------------------------------Product Description ---------------------------------------------- -->    
+    <div class="product-description">
+
+        <h2>Product Description</h2>
+        <div class="product-img">
+            <img src="./images/product img1.jpg" width="100%" height="100%" class="img1">
+            <img src="./images/product img2.jpg" width="100%" height="100%" class="img2">
+        </div>
+
+        <div class="product-desc-img">
+                    <button class="btn btn1"> CLASSIC DESIGN</button>
+                    <button class="btn btn2"> DURABILITY</button>
+                    <button class="btn btn3"> COMFORT</button>
+        </div>
+
+        <div class="wrapper-img">
+            <!-- <div onclick="slide_show(-1)" id="arrow-left1">
+                <i class="fa-solid fa-less-than" ></i>
+            </div> -->
+
+                <div class="img img3">
+                    <img src="./images/product img3.jpg" width="100%" height="100%" >
+                </div>
+
+                <div class="img img4">
+                    <img src="./images/product img4.jpg" width="100%" height="100%">
+                </div>
+
+                <div class="img img5">
+                    <img src="./images/product img5.jpg" width="100%" height="100%">
+                </div>
+
+            <!-- <div onclick="slide_show(1)" id="arrow-right1">
+                <i class="fa-solid fa-greater-than"></i>
+            </div> -->
+            
+        </div>
+        
+        <!-- right description -->
+        <div class="textcontent">
+                <div class="img img6">
+                    <img src="./images/product img6.jpg" width="100%" height="500">
+                </div>
+                <div class = "innertextcontent">
+                    <h4 style="font-family: Arial, Helvetica, sans-serif;" class="h4">Try-on Feedback</h4>
+                    <h1 style="font-family: Arial, Helvetica, sans-serif;" class="h1">Fashion is the pursuit and yearning of each of us for beauty.</h1>
+                    <h3 style="font-weight: lighter; font-family: Arial, Helvetica, sans-serif;" class="h3">The major reason I got these shoes was that they served both the formal and casual shoe need for me. I can pretty well wear these shoes with my formals and casual.They have an elegant design in the front and also the sole is supportive when you walk a lot even with these shoes. I wanted to have such kinda shoes which could serve multiple purposes for me and i feel i found that in these.</h3>
+
+                </div>
+            </div>
+    </div>
+    
+
+    <!-- ---------------------------------------Product Review -------------------------------------------- -->
+
+    <div class="product-review">
+        <div class="container">
+            <header> How was your Experience ? </header>
+            <div class="star">
+
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+            
+            <div class="textbox">
+                <textarea  placeholder="FeedBack" name="feedback" id="fd" cols="45" rows="15" class="feedback" style="border: 2px solid black ; border-radius : 25px" required>
+                   
+                </textarea>
+
+                <div class="button">
+                    <button onclick="addToArray()">
+                        Submit
+                    </button>
+                </div>
+
+            </div>
+        </div>  
+
+    
+
+    <div class="display">
+
+    </div>
+
+    </div>
+
+    <!-- Aryan Magdum -->
+    <!-- ----------------------------------------------Footer---------------------------------------------- -->
     <footer>
         <div class="foot-panel1">
             Back to Top
@@ -162,6 +280,7 @@
 
     </footer>
     <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/51d4845f3c.js" crossorigin="anonymous"></script>
 </body>
 
-</html>
+</html>4
