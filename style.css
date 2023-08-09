@@ -5,9 +5,10 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-html,body{
+html,
+body {
     max-width: 100%;
-    overflow-x:hidden ;
+    overflow-x: hidden;
     scroll-behavior: smooth;
 }
 
@@ -61,9 +62,7 @@ html,body{
 
 }
 
-#hello-img {
-   
-}
+#hello-img {}
 
 .hello-text {
     color: white;
@@ -87,19 +86,19 @@ html,body{
     line-height: 1.15;
     box-shadow: 0px 10px 20px -18px;
     position: relative;
-  
-  }
-  
-  input:focus {
+
+}
+
+input:focus {
     border-bottom: 2px solid #5b5fc7;
     border-radius: 4px 4px 2px 2px;
-  }
-  
-  input:hover {
-    outline: 1px solid lightgrey;
-  }
+}
 
-  .searchbarwrap{
+input:hover {
+    outline: 1px solid lightgrey;
+}
+
+.searchbarwrap {
     margin-left: 50px;
     margin-right: 50px;
     display: flex;
@@ -107,14 +106,16 @@ html,body{
     width: 600px;
     position: relative;
 
-  }
-  .searchicon{
+}
+
+.searchicon {
     position: absolute;
     right: 10px;
 
-  }
-  /* search bar ends */
-  .retandord{
+}
+
+/* search bar ends */
+.retandord {
     text-decoration: none;
     color: white;
     height: 100%;
@@ -123,20 +124,21 @@ html,body{
     margin-left: 50px;
     margin-right: 50px;
 
-  }
-  .cart{
+}
+
+.cart {
     margin-left: 20px;
     margin-right: 50px;
-  }
+}
 
-  .hoverborder :hover{
-    border:  solid white 2px;
+.hoverborder :hover {
+    border: solid white 2px;
     transition: 0.5 ease-in-out;
-  }
+}
 
 /* <---------------------------------- Middle Section (product gallery) ------------------------------> */
 
-    /* ----------------- Middle Section (product gallery) By Saurabh ------------------------------> */
+/* ----------------- Middle Section (product gallery) By Saurabh ------------------------------> */
 
 .wrapper {
     width: 100%;
@@ -149,13 +151,14 @@ html,body{
 }
 
 .prodesc {
-    border-left: 2px solid black;
+    /* border-left: 2px solid black; */
     display: flex;
     flex-direction: column;
     width: 40%;
     height: 100%;
     padding: 20px 30px;
     gap: 3%;
+    box-shadow: 0 0 10px black;
 }
 
 .reviews {
@@ -166,7 +169,7 @@ html,body{
     padding-right: 10px;
 }
 
-.product-list li{
+.product-list li {
     padding-left: 30px;
     display: flex;
     flex-direction: column;
@@ -182,7 +185,7 @@ html,body{
     justify-content: space-evenly;
     align-items: center;
     width: 8%;
-    border-right: 3px solid black;
+    /* border-right: 3px solid black; */
     box-shadow: 0 0 10px black;
 }
 
@@ -230,7 +233,7 @@ html,body{
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
     width: 700px;
-    height: 400px;
+    height: 300px;
     overflow-x: hidden;
     /* background-size: cover; */
     background-position: center;
@@ -240,19 +243,22 @@ html,body{
 .slide1 {
     max-width: 100%;
     max-height: 100%;
-    background-image: url("./images/img1.jpg");
+    /* background-image: url("./images/img1.jpg"); */
+    background-image: url("https://m.media-amazon.com/images/I/71Hqh3lw84L._AC_UX575_.jpg");
+    object-fit: contain;
 }
 
 .slide2 {
     max-width: 100%;
     max-height: 100%;
-    background-image: url("./images/img2.jpg");
+    background-image: url("https://m.media-amazon.com/images/I/71wk1q6z9GL._AC_UX575_.jpg");
+    object-fit: contain;
 }
 
 .slide3 {
     max-width: 100%;
     max-height: 100%;
-    background-image: url("./images/img3.jpg");
+    background-image: url("https://m.media-amazon.com/images/I/71Jg+td+juL._AC_UX575_.jpg");
 }
 
 .slide4 {
@@ -278,7 +284,7 @@ html,body{
 
 #arrow-left {
     top: 50%;
-    left: 7%;
+    left: 9%;
     border-width: 20px 30px 20px 0;
     border-color: transparent #000000 transparent transparent;
     margin-left: 20px;
@@ -286,7 +292,7 @@ html,body{
 
 #arrow-right {
     top: 50%;
-    left: 57%;
+    left: 55%;
     border-width: 20px 0 20px 30px;
     border-color: transparent transparent transparent #000000;
     margin-right: 20px;
@@ -341,7 +347,7 @@ html,body{
 
 /* <--------------------------------Product Description--------------------> */
 
-.wrapper-img{
+.wrapper-img {
     overflow-x: hidden;
     /* background-size: cover; */
     background-position: center;
@@ -349,15 +355,15 @@ html,body{
 }
 
 
-.product-img .img1{
+.product-img .img1 {
     padding-top: 30px;
     padding-left: 30px;
     padding-right: 30px;
     margin-bottom: -4px;
-    
+
 }
 
-.product-img .img2{
+.product-img .img2 {
     padding-bottom: 30px;
     padding-left: 30px;
     padding-right: 30px;
@@ -370,7 +376,7 @@ html,body{
     transition: 0.8s;
 }
 
-.btn1{
+.btn1 {
     justify-content: center;
     align-items: center;
     border: 1px solid black;
@@ -380,13 +386,14 @@ html,body{
     padding-left: 25px;
     padding-right: 25px;
     cursor: pointer;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     letter-spacing: normal;
-    
+
 }
 
-.btn2, .btn3{
+.btn2,
+.btn3 {
     justify-content: center;
     align-items: center;
     border: 1px solid black;
@@ -396,29 +403,31 @@ html,body{
     padding-left: 35px;
     padding-right: 35px;
     cursor: pointer;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     letter-spacing: normal;
 
 }
 
 
-.btn1:hover , .btn2:hover ,.btn3:hover{
+.btn1:hover,
+.btn2:hover,
+.btn3:hover {
     background-color: black;
     color: white;
     cursor: pointer;
-    transition: 0.2s ;
+    transition: 0.2s;
 }
 
-.changebackground{
+.changeBackground {
     background-color: #222f3d;
     color: white;
     cursor: pointer;
-    transition: 0.2s ;
+    transition: 0.2s;
 }
 
 
-.arrow1{
+.arrow1 {
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -428,46 +437,47 @@ html,body{
     border-style: solid;
 }
 
-.wrapper-img img{
+.wrapper-img img {
     padding: 30px;
 }
 
 .textcontent {
     display: flex;
     /* flex-direction: column; */
-    
+
     /* align-items: center; */
     /* justify-content: space-evenly; */
 }
-.img6{
+
+.img6 {
     padding-left: 30px;
     padding-bottom: 30px;
     width: 100%;
 }
 
 
-.h1{
+.h1 {
     padding-left: 20px;
-    padding-bottom:10px;
+    padding-bottom: 10px;
     align-items: center;
     word-spacing: 2px;
 }
 
-.h3{
-   /* padding:30px; */
-   padding-left: 20px;
+.h3 {
+    /* padding:30px; */
+    padding-left: 20px;
     align-items: center;
     /* word-spacing: 2px; */
 }
 
-.h4{
+.h4 {
     padding-left: 20px;
     padding-bottom: 5px;
     align-items: center;
     /* word-spacing: 2px; */
 }
 
-.innertextcontent{
+.innertextcontent {
     width: 100%;
     margin-top: 60px;
     padding: 30px;
@@ -477,33 +487,37 @@ html,body{
     /* align-items: center; */
 
 }
+
 /* <---------------------------------------- Product Review ----------------------------------------> */
 
 .product-review {
     height: 100%;
     display: flex;
     flex-wrap: wrap;
-    align-items: center;  /* Vertically */
-    justify-content: space-evenly;/* Horizontally */
+    align-items: center;
+    /* Vertically */
+    justify-content: space-evenly;
+    /* Horizontally */
     padding-left: 100px;
     padding-right: 100px;
-    background: linear-gradient(45deg,#0cc0df,#ffb2f3,#ffde59);
+    background: linear-gradient(45deg, #0cc0df, #ffb2f3, #ffde59);
 }
 
 
 .container {
     /* position: ; */
-    margin:30px;
+    margin: 30px;
     height: 450px;
     background: #fff;
-    padding: 25px 50px 35px; /* Vertically Horizontally Z axis  */
+    padding: 25px 50px 35px;
+    /* Vertically Horizontally Z axis  */
     border-radius: 25px;
     box-shadow: 0px 5px 8px;
-    
+
 }
 
 
-.container header{
+.container header {
     font-size: 22px;
     font-weight: bold;
     margin-bottom: 20px;
@@ -512,7 +526,7 @@ html,body{
 .container .star {
     display: flex;
     align-items: center;
-    gap:25px;
+    gap: 25px;
 }
 
 .container.star i {
@@ -522,30 +536,30 @@ html,body{
     transition: color 0.2 ease;
 }
 
-.star i.active{
+.star i.active {
     color: #ffde59;
 }
 
-.textbox{
+.textbox {
     margin-top: 20px;
-    
-}
-
-.textbox .button{
-        display: flex;
-        align-items: center;
-        justify-content:center;
 
 }
 
+.textbox .button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-.popup-container{
+}
+
+
+.popup-container {
     display: flex;
     flex-wrap: wrap;
 
 }
 
-.popup{
+.popup {
     width: 30%;
     height: 40%;
     min-width: 350px;
@@ -564,7 +578,7 @@ html,body{
     box-shadow: 0 2px 5px black;
 }
 
-.open-popup{
+.open-popup {
     visibility: visible;
     top: 620vh;
     /* transform: translate(-45%,-50%)scale(1); */
@@ -574,7 +588,7 @@ html,body{
     z-index: 5;
 }
 
-.overlay{
+.overlay {
     position: fixed;
     display: none;
     top: 0;
@@ -583,29 +597,29 @@ html,body{
     bottom: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0 , 0 , 0 , 0.7);
+    background-color: rgba(0, 0, 0, 0.7);
     z-index: 3;
 }
 
-.toggleDisplay{
+.toggleDisplay {
     display: block;
 }
 
-.popup img{
+.popup img {
     width: 100px;
     margin-top: -50px;
     border-radius: 50%;
     box-shadow: 0 2px 5px black;
 }
 
-.popup h2{
-    font-size:38px;
+.popup h2 {
+    font-size: 38px;
     font-weight: 500;
     margin: 30px 0 10px;
 }
 
-.popup button{
-    width:70%;
+.popup button {
+    width: 70%;
     margin-top: 20px;
     padding: 10px 0;
     background: #6fd649;
@@ -618,46 +632,47 @@ html,body{
 }
 
 
-.button1{
+.button1 {
     margin-top: 20px;
     margin-left: 120px;
     border-radius: 8px;
     padding: 8px 8px 8px;
-    font-weight:bold;
+    font-weight: bold;
     cursor: pointer;
     /* transition: color 0.2 ease; */
     box-shadow: 0px 1px 8px;
 }
 
-.display{
+.display {
     min-width: 420px;
     min-height: 300px;
     margin: 30px;
     height: 400px;
     width: 420px;
     background: #fff;
-    padding: 25px 50px 35px; /* Vertically Horizontally Z axis  */
+    padding: 25px 50px 35px;
+    /* Vertically Horizontally Z axis  */
     border-radius: 25px;
-    box-shadow: 0px 5px 8px;  
-    background-color:#E9EAEC;
+    box-shadow: 0px 5px 8px;
+    background-color: #E9EAEC;
     overflow-y: scroll;
     overflow-x: hidden;
-    
+
 }
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
     width: 21px;
 }
 
-::-webkit-scrollbar-track{
+::-webkit-scrollbar-track {
     /* Track in which the thumb(pointer) can move easily */
     background-color: gainsboro;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
 }
 
-::-webkit-scrollbar-thumb{
-    background-color:grey ;
+::-webkit-scrollbar-thumb {
+    background-color: grey;
     border-radius: 30px;
     border: 0.5rem solid transparent;
     background-clip: content-box;
@@ -665,29 +680,30 @@ html,body{
 
 
 
-.feedback-display:nth-child(odd){
+.feedback-display:nth-child(odd) {
     border: 1px solid black;
     border-radius: 20px;
-    width:70%;
+    width: 70%;
     height: 30%;
     margin-top: 10px;
-    padding:20px;
-    padding-right:20px ;
+    padding: 20px;
+    padding-right: 20px;
     padding-left: 40px;
     text-decoration: none;
     list-style-type: none;
     box-shadow: -3px 4px 6px grey;
-    background:#fff;
+    background: #fff;
 }
-.feedback-display:nth-child(even){
+
+.feedback-display:nth-child(even) {
     border: 1px solid black;
     border-radius: 20px;
-    width:60%;
+    width: 60%;
     height: 30%;
     margin-left: 50%;
     margin-top: 10px;
-    padding:20px;
-    padding-right:20px ;
+    padding: 20px;
+    padding-right: 20px;
     padding-left: 40px;
     text-decoration: none;
     list-style-type: none;
@@ -695,7 +711,8 @@ html,body{
     background: #fff;
 
 }
-.feedback-display .divstars{
+
+.feedback-display .divstars {
     display: flex;
     padding-bottom: 10px;
 }
@@ -707,7 +724,7 @@ html,body{
     transition: color 0.2 ease;
 }
 
-.changeColor{
+.changeColor {
     color: #ffde59;
 }
 
@@ -735,8 +752,8 @@ footer {
 }
 
 .foot-panel2 {
-    background-color:#E8E8E0;
-    color:  #222f3d;
+    background-color: #E8E8E0;
+    color: #222f3d;
     border-top: 1px solid white;
     padding: 30px;
     height: 100%;
@@ -747,7 +764,7 @@ footer {
     /* padding-bottom:10px; */
 }
 
-.foot-panel2 ul{
+.foot-panel2 ul {
     padding: 20px;
 }
 
@@ -770,14 +787,14 @@ ul a {
     display: block;
     font-size: 0.85rem;
     margin-top: 8px;
-    color:#222f3d;
+    color: #222f3d;
     text-decoration: none;
 }
 
 
 .foot-panel4 {
     border-top: 1px solid white;
-    background-color:#E9EAEC;
+    background-color: #E9EAEC;
     color: #0f1111;
     height: 80px;
     font-size: 0.7rem;
@@ -785,7 +802,7 @@ ul a {
 }
 
 .foot-panel4 a {
-    color:#0f1111;
+    color: #0f1111;
     text-decoration: none;
 }
 
