@@ -1,15 +1,385 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="style2.css" rel="stylesheet" type="text/css" />
-    <title>Document</title>
-</head>
-<body>  
-      
-        
-    <script src="script2.js"></script>
- 
-</body>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Amazon</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+
+    <div class="overlay"></div>
+
+    <header class="header">
+      <div class="nav-items">
+        <img
+          src="https://static.vecteezy.com/system/resources/previews/019/766/223/original/amazon-logo-amazon-icon-transparent-free-png.png"
+          alt=""
+          class="img-amz"
+        />
+
+        <a href="#" class="home">Home</a>
+
+        <div class="hello">
+          <div class="hello-img">
+            <i
+              class="fa-solid fa-location-dot"
+              style="color: #ffffff"
+              id="hello-img"
+            ></i>
+          </div>
+          <div class="hello-text">
+            <div>Hello !</div>
+            <div>Select your address</div>
+          </div>
+        </div>
+
+        <div class="searchbarwrap">
+          <input
+            class="input"
+            name="text"
+            placeholder="Search..."
+            type="search"
+          />
+          <i class="fa-solid fa-magnifying-glass searchicon"></i>
+        </div>
+        <a href="#" class="retandord"><div>Return & Order</div></a>
+
+        <a href="#" class="cart"
+          ><i class="fa-solid fa-cart-shopping" style="color: #ffffff"></i
+        ></a>
+
+        <div class="hoverborder" style="color: white">Happy shopping !</div>
+      </div>
+    </header>
+
+    <!-- Saurabh Rajopadhye -->
+
+    <!-- ---------------------------------Saurabh ------------------------------------------------ -->
+    <div class="wrapper">
+      <!-- left product bar -->
+      <div class="proicons">
+        <button onclick="targetSlide(0)" id="btn1">
+          <img src="./images/img1.jpg" width="50px" height="45px" id="img1" />
+        </button>
+        <button onclick="targetSlide(1)" id="btn2">
+          <img src="./images/img2.jpg" width="50px" height="45px" id="img2" />
+        </button>
+        <button onclick="targetSlide(2)" id="btn3">
+          <img src="./images/img3.jpg" width="50px" height="45px" id="img3" />
+        </button>
+        <button onclick="targetSlide(3)" id="btn4">
+          <img src="./images/img4.jpg" width="50px" height="45px" id="img4" />
+        </button>
+        <button onclick="targetSlide(4)" id="btn5">
+          <img src="./images/img5.jpg" width="50px" height="45px" id="img5" />
+        </button>
+        <button onclick="targetVideo()">
+          <img src="./images/download (1).jpg" width="50px" height="45px" />
+        </button>
+      </div>
+
+      <!-- middle image gallery -->
+      <div class="gallery">
+        <h2>Product Images</h2>
+
+        <div class="slide-wrapper">
+          <div id="arrow-left" class="arrow"></div>
+          <div class="slide slide1"></div>
+          <div class="slide slide2"></div>
+          <div class="slide slide3"></div>
+          <div class="slide slide4"></div>
+          <div class="slide slide5"></div>
+          <div id="arrow-right" class="arrow"></div>
+        </div>
+      </div>
+
+      <!-- right description bar -->
+      <div class="prodesc">
+        <h1>
+          VOSTEY Men's Fashion Sneakers Breathable Casual Shoes Business Causal
+          Flat
+        </h1>
+        <div class="quality">
+          <a href="#product-review-id" class="ratings">Ratings</a>
+          <i class="fa-solid fa-star fa-xl" style="color: #ffa500"></i>
+          <i class="fa-solid fa-star fa-xl" style="color: #ffa500"></i>
+          <i class="fa-solid fa-star fa-xl" style="color: #ffa500"></i>
+          <i class="fa-solid fa-star fa-xl" style="color: #ffa500"></i>
+          <i
+            class="fa-solid fa-star-half-stroke fa-xl"
+            style="color: #ffa500"
+          ></i>
+          <a href="#product-review-id" class="reviews">Reviews</a>
+        </div>
+        <ul class="product-list">
+          <li>Rubber sole</li>
+          <li>
+            The insole is made of high-density sponge material, soft and
+            comfortable, effectively relieving foot pressure and walking with
+            ease.
+          </li>
+          <li>
+            The upper is made of high-quality material, finely cut and stitched,
+            presenting a simple and stylish casual style that can match both
+            formal suits and casual jeans.
+          </li>
+          <li>
+            The lining is a perfect blend of texture and function, as it molds
+            to the shape of your feet, keeps them from sliding, and provides a
+            comfortable and stable fit. The lining is customized for you, making
+            you feel elegant and confident with every step.
+          </li>
+          <li>
+            These casual dress shoes are versatile shoes that can make you look
+            confident and elegant whether you are working, traveling, dating,
+            partying or traveling. They are a pair of shoes that you can't miss
+            in your wardrobe.
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="videoWrapper" id="101">
+      <video muted id="vid1">
+        <source src="./video/vid1.mp4" type="video/mp4" />
+      </video>
+    </div>
+
+    <div class="vidControls">
+      <div class="vidBtns">
+        <button id="vidbtn1" onclick="toggleMute()">
+          <i class="fa-solid fa-volume-low fa-2xl"></i>
+        </button>
+        <button id="vidbtn2" onclick="playVideo()">
+          <i class="fa-solid fa-circle-play fa-2xl"></i>
+        </button>
+        <button id="vidbtn3" onclick="pauseVideo()">
+          <i class="fa-solid fa-circle-pause fa-2xl"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Aryan Magdum -->
+    <!-- ----------------------------------------------Product Description ---------------------------------------------- -->
+    <div class="product-description">
+      <h2>Product Description</h2>
+      <div class="product-img">
+        <img
+          src="./images/product img1.jpg"
+          width="100%"
+          height="100%"
+          class="img1"
+        />
+        <img
+          src="./images/product img2.jpg"
+          width="100%"
+          height="100%"
+          class="img2"
+        />
+      </div>
+
+      <div class="product-desc-img">
+        <button class="btn btn1" onclick="changeImage(1)" id="button1">
+          CLASSIC DESIGN
+        </button>
+        <button class="btn btn2" onclick="changeImage(2)" id="button2">
+          DURABILITY
+        </button>
+        <button class="btn btn3" onclick="changeImage(3)" id="button3">
+          COMFORT
+        </button>
+      </div>
+
+      <div class="wrapper-img">
+        <!-- <div onclick="prev()" id="arrow-left1">
+                <i class="fa-solid fa-less-than" ></i>
+            </div> -->
+
+        <!-- <button onclick="prev()">Previous</button> -->
+        <div class="img img3" class="slider-img">
+          <img
+            src="./images/product img3.jpg"
+            width="100%"
+            height="100%"
+            id="image1"
+          />
+        </div>
+
+        <!-- <button onclick="next()">Next</button> -->
+        <div class="img img4">
+          <img
+            src="./images/product img4.jpg"
+            width="100%"
+            height="100%"
+            id="image2"
+          />
+        </div>
+
+        <div class="img img5">
+          <img
+            src="./images/product img5.jpg"
+            width="100%"
+            height="100%"
+            id="image3"
+          />
+        </div>
+
+        <!-- <div onclick="next()" id="arrow-right1">
+                <i class="fa-solid fa-greater-than"></i>
+            </div> -->
+      </div>
+
+      <!-- right description -->
+      <div class="textcontent">
+        <div class="img img6">
+          <img src="./images/product img6.jpg" width="100%" height="500" />
+        </div>
+        <div class="innertextcontent">
+          <h4 style="font-family: Arial, Helvetica, sans-serif" class="h4">
+            Try-on Feedback
+          </h4>
+          <h1 style="font-family: Arial, Helvetica, sans-serif" class="h1">
+            Fashion is the pursuit and yearning of each of us for beauty.
+          </h1>
+          <h3
+            style="
+              font-weight: lighter;
+              font-family: Arial, Helvetica, sans-serif;
+            "
+            class="h3"
+          >
+            The major reason I got these shoes was that they served both the
+            formal and casual shoe need for me. I can pretty well wear these
+            shoes with my formals and casual.They have an elegant design in the
+            front and also the sole is supportive when you walk a lot even with
+            these shoes. I wanted to have such kinda shoes which could serve
+            multiple purposes for me and i feel i found that in these.
+          </h3>
+        </div>
+      </div>
+    </div>
+
+    <!-- ---------------------------------------Product Review -------------------------------------------- -->
+
+    <div class="product-review" id="product-review-id">
+      <div class="container">
+        <header>How was your Experience ?</header>
+        <div class="star">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+        </div>
+
+        <div class="textbox">
+          <div class="text-area">
+            <textarea
+              placeholder="FeedBack"
+              name="feedback"
+              id="fd"
+              cols="45"
+              rows="15"
+              class="feedback"
+              style="border: 2px solid black; border-radius: 25px"
+              required
+            >
+            </textarea>
+          </div>
+
+          <div class="popup-container">
+            <button type="submit" onclick="openPopup()" class="button1">
+              Submit
+            </button>
+            <div class="popup" id="popup">
+              <img src="images/404-tick.png" alt="" />
+              <h2>Thank You For Your FeedBack</h2>
+              <p>Your FeedBack has been successfully submitted.</p>
+              <button type="button" onclick="closePopup()">OK</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="display">
+   
+      </div>
+    </div>
+
+    <!-- Aryan Magdum -->
+    <!-- ----------------------------------------------Footer---------------------------------------------- -->
+    <footer>
+      <div class="foot-panel1">Back to Top</div>
+
+      <div class="foot-panel2">
+        <ul>
+          <p>Get to Know Us</p>
+          <a href="">Careers</a>
+          <a href="">Blog</a>
+          <a href="">About </a>
+          <a href="">Investor Relations</a>
+          <a href="">Devices</a>
+          <a href="">Science</a>
+        </ul>
+
+        <ul>
+          <p>Make Money with Us</p>
+          <a href="">Sell products on </a>
+          <a href="">Sell on Business</a>
+          <a href="">Sell apps on </a>
+          <a href="">Become an Affiliate</a>
+          <a href="">Advertise Your Products</a>
+          <a href="">Self-Publish with Us</a>
+          <a href="">Host an Hub</a>
+          <select name="" id="">
+            <option value="">See More Make Money with Us</option>
+          </select>
+        </ul>
+
+        <ul>
+          <p>Payment</p>
+          <a href="">Business Card</a>
+          <a href="">Shop with Points</a>
+          <a href="">Reload Your Balance</a>
+          <a href="">Currency Converter</a>
+        </ul>
+
+        <ul>
+          <p>Let Us Help You</p>
+          <a href=""> and COVID-19</a>
+          <a href="">Your Account</a>
+          <a href="">Your Orders</a>
+          <a href="">Shipping Rates & Policies</a>
+          <a href="">Return & Replacements</a>
+          <a href="">Manage Your Content and Devices</a>
+          <a href="">Amazon Assistant</a>
+          <a href="">Help</a>
+        </ul>
+      </div>
+
+      <div class="foot-panel3">
+        <div class="logo"></div>
+      </div>
+
+      <div class="foot-panel4">
+        <div class="content">
+          <a href=""> Conditions of Use </a>
+          <a href=""> Privacy Notice </a>
+          <a href=""> Your Ads Privacy Choices </a>
+        </div>
+
+        <div class="copy-rights">
+          <a href="">© 1996-2023, Amazon.com, Inc. or its affiliates</a>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+    <script
+      src="https://kit.fontawesome.com/51d4845f3c.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
+4
