@@ -1,159 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="style2.css" rel="stylesheet" type="text/css" />
-    <title>Document</title>
-</head>
-<body>  
-      
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style1.css" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" href="./images/fast-delivery.png" type="image/x-icon">
+    <title>FAST-KART | HOME</title>
+  </head>
+  <body>
+
+    <div class="cover-overlay">
+      <div class="overlay-image">
+        <img src="./images/truck-fast-solid (6).svg" alt="" width="10%" height="10%">
+      </div>
+    </div>
     <header class="header">
-        <div class="nav-items">
-            <img src="https://static.vecteezy.com/system/resources/previews/019/766/223/original/amazon-logo-amazon-icon-transparent-free-png.png"
-                alt="" class="img-amz" />
+      <div class="nav-items">
+        <!-- <img
+          src="images/fast-delivery.png"
+          alt=""
+          class="img-amz"
+        /> -->
+        <i class="fa-solid fa-truck-fast fa-2xl"></i>
 
-            <a href="#" class="home">Home</a>
+        <a href="#" class="home hoverborder">Home</a>
 
-
-            <div class="hello">
-                <div class="hello-img">
-                    <img src="https://thumbs.dreamstime.com/z/location-pin-icon-transparent-location-pin-sign-flat-style-red-location-pin-symbol-map-pointer-symbol-map-pin-sign-location-pin-117283757.jpg"
-                        alt="" id="hello-img" />
-                </div>
-                <div class="hello-text">
-                    <div>Hello !</div>
-                    <div>Select your address</div>
-                </div>
-            </div>
-
-            <i class="fa-solid fa-cart-shopping" id="cart-icon"></i>
-
+        <div class="hello">
+          <div class="hello-img">
+            <i
+              class="fa-solid fa-location-dot"
+              style="color: #ffffff"
+              id="hello-img"
+            ></i>
+          </div>
+          <div class="hello-text">
+            <div>Hello !</div>
+            <div>Select your address</div>
+          </div>
         </div>
+
+        <div class="searchbarwrap">
+          <input
+            class="input"
+            name="text"
+            placeholder="Search..."
+            type="search"
+          />
+          <i
+            class="fa-solid fa-magnifying-glass searchicon"
+            style="color: black"
+          ></i>
+        </div>
+        <a href="#" class="retandord"
+          ><div class="hoverborder">Return & Order</div></a
+        >
+
+        <a href="#" class="cart hoverborder"
+          ><i class="fa-solid fa-cart-shopping" style="color: #ffffff"></i
+        ></a>
+
+        <div class="hoverborder" style="color: white">Happy shopping !</div>
+      </div>
     </header>
 
-      <!-- Shop Content -->
-      <section class="shop container">
+    <!-- div to auto slide the images -->
+    <div class="auto-slide">
+      <!-- <img src="./images/display1.jpg" alt="" class="auto-width"> -->
+      <!-- <img src="./images/display2.jpg" alt="" class="auto-width"> -->
+      <img src="./images/display3.jpg" alt="" class="auto-width">
+      <img src="./images/display4.jpg" alt="" class="auto-width">
+      <img src="./images/display5.png" alt="" class="auto-width">
+    </div>
 
-            <h2 class="section-title">Shop Products</h2>
+    <!-- Shop Content -->
+    <section class="shop container">
+      <h2 class="section-title">Shop Products</h2>
 
-            <!-- Content -->
-            <div class="shop-content">
+      <!-- Content -->
+      <div class="shop-content">
+        <!-- Item1 -->
+        <a href="index2.html">
+          <div class="product-box">
+            <img src="images/shoe1.jpg" alt="" class="product-img" />
+            <h2 class="product-title">
+              <a href="index2.html"> Leather Shoes </a>
+            </h2>
+            <span class="price"><a href="index2.html"> Rs 2999 </a></span>
+            <i class="fa-solid fa-bag-shopping addToCart"></i>
+          </div>
+        </a>
 
-                <!-- Item1 -->
-                <a href="index2.html">
+        <!-- Item2 -->
+        <div class="product-box">
+          <img src="images/addidas.webp" alt="" class="product-img" />
+          <h2 class="product-title">Addidas Sports</h2>
+          <span class="price">Rs 3999</span>
+          <i class="fa-solid fa-bag-shopping addToCart"></i>
+        </div>
 
-                    <div class="product-box">
-                        
-                        <img src="images/shoe1.jpg" alt="" class="product-img">
-                        <h2 class="product-title"><a href="index2.html"> Leather Shoes </a></h2>
-                        <span class="price"><a href="index2.html"> Rs 2999 </a></span>
-                        <i class="fa-solid fa-bag-shopping addToCart"></i>
-                    </div>
-                </a>
+        <!-- Item3 -->
+        <div class="product-box">
+          <img src="images/belt.jpg" alt="" class="product-img" />
+          <h2 class="product-title">Leather Belt</h2>
+          <span class="price">Rs 599</span>
+          <i class="fa-solid fa-bag-shopping addToCart"></i>
+        </div>
 
-                 <!-- Item2 -->
-                 <div class="product-box">
-                    <img src="images/shoe2.jpg" alt="" class="product-img">
-                    <h2 class="product-title">Nike Air</h2>
-                    <span class="price">Rs 16999</span>
-                    <i class="fa-solid fa-bag-shopping addToCart"></i>
-                </div>
-
-                 <!-- Item3 -->
-                 <div class="product-box">
-                    <img src="images/belt.jpg" alt="" class="product-img">
-                    <h2 class="product-title">Leather Belt</h2>
-                    <span class="price">Rs 599</span>
-                    <i class="fa-solid fa-bag-shopping addToCart"></i>
-                </div>
-
-                 <!-- Item4 -->
-                 <div class="product-box">
-                    <img src="images/shoe3.jpg" alt="" class="product-img">
-                    <h2 class="product-title">Sneakers</h2>
-                    <span class="price">Rs 2599</span>
-                    <i class="fa-solid fa-bag-shopping addToCart"></i>
-                </div>
-            </div>
-      </section>
+        <!-- Item4 -->
+        <div class="product-box">
+          <img src="images/shoe3.jpg" alt="" class="product-img" />
+          <h2 class="product-title">Sneakers</h2>
+          <span class="price">Rs 2599</span>
+          <i class="fa-solid fa-bag-shopping addToCart"></i>
+        </div>
+      </div>
+    </section>
 
     <!-- ----------------------------------------------Footer---------------------------------------------- -->
     <footer>
-        <div class="foot-panel1">
-            Back to Top
+      <a href="#header" style="text-decoration: none"
+      ><div class="foot-panel1">Back to Top</div></a
+    >
+      <div class="foot-panel2">
+        <ul>
+          <p>Get to Know Us</p>
+          <a href="">Careers</a>
+          <a href="">Blog</a>
+          <a href="">About </a>
+          <a href="">Investor Relations</a>
+          <a href="">Devices</a>
+          <a href="">Science</a>
+        </ul>
+
+        <ul>
+          <p>Make Money with Us</p>
+          <a href="">Sell products on </a>
+          <a href="">Sell on Business</a>
+          <a href="">Sell apps on </a>
+          <a href="">Become an Affiliate</a>
+          <a href="">Advertise Your Products</a>
+          <a href="">Self-Publish with Us</a>
+          <a href="">Host an Hub</a>
+          <select name="" id="">
+            <option value="">See More Make Money with Us</option>
+          </select>
+        </ul>
+
+        <ul>
+          <p>Payment</p>
+          <a href="">Business Card</a>
+          <a href="">Shop with Points</a>
+          <a href="">Reload Your Balance</a>
+          <a href="">Currency Converter</a>
+        </ul>
+
+        <ul>
+          <p>Let Us Help You</p>
+          <a href=""> and COVID-19</a>
+          <a href="">Your Account</a>
+          <a href="">Your Orders</a>
+          <a href="">Shipping Rates & Policies</a>
+          <a href="">Return & Replacements</a>
+          <a href="">Manage Your Content and Devices</a>
+          <a href="">Assistant</a>
+          <a href="">Help</a>
+        </ul>
+      </div>
+
+      <div class="foot-panel3">
+        <div class="logo"><img src="./images/truck-fast-solid (3).svg" alt="" height="50px" width="50px"></div>
+      </div>
+
+      <div class="foot-panel4">
+        <div class="content">
+          <a href=""> Conditions of Use </a>
+          <a href=""> Privacy Notice </a>
+          <a href=""> Your Ads Privacy Choices </a>
         </div>
 
-        <div class="foot-panel2">
-            <ul>
-                <p> Get to Know Us </p>
-                <a href="">Careers</a>
-                <a href="">Blog</a>
-                <a href="">About </a>
-                <a href="">Investor Relations</a>
-                <a href="">Devices</a>
-                <a href="">Science</a>
-            </ul>
-
-
-            <ul>
-                <p> Make Money with Us </p>
-                <a href="">Sell products on </a>
-                <a href="">Sell on Business</a>
-                <a href="">Sell apps on </a>
-                <a href="">Become an Affiliate</a>
-                <a href="">Advertise Your Products</a>
-                <a href="">Self-Publish with Us</a>
-                <a href="">Host an Hub</a>
-                <select name="" id="">
-                    <option value="">See More Make Money with Us</option>
-                </select>
-            </ul>
-
-            <ul>
-                <p> Payment </p>
-                <a href="">Business Card</a>
-                <a href="">Shop with Points</a>
-                <a href="">Reload Your Balance</a>
-                <a href="">Currency Converter</a>
-            </ul>
-
-
-            <ul>
-                <p> Let Us Help You </p>
-                <a href=""> and COVID-19</a>
-                <a href="">Your Account</a>
-                <a href="">Your Orders</a>
-                <a href="">Shipping Rates & Policies</a>
-                <a href="">Return & Replacements</a>
-                <a href="">Manage Your Content and Devices</a>
-                <a href="">Amazon Assistant</a>
-                <a href="">Help</a>
-            </ul>
-
+        <div class="copy-rights">
+          <a href="">© 1996-2023,FAST-KART.company, Inc. or its affiliates</a>
         </div>
-
-        <div class="foot-panel3">
-            <div class="logo"></div>
-        </div>
-
-        <div class="foot-panel4">
-            <div class="content">
-                <a href=""> Conditions of Use </a>
-                <a href=""> Privacy Notice </a>
-                <a href=""> Your Ads Privacy Choices </a>
-            </div>
-
-            <div class="copy-rights">
-                <a href="">© 1996-2023, Amazon.com, Inc. or its affiliates</a>
-
-            </div>
-        </div>
-
+      </div>
     </footer>
-        
-    <script src="script2.js"></script>
-    <script src="https://kit.fontawesome.com/51d4845f3c.js" crossorigin="anonymous"></script>
-    
-</body>
+
+    <script
+      src="https://kit.fontawesome.com/51d4845f3c.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script1.js"></script>
+  </body>
 </html>

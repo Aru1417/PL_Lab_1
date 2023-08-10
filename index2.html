@@ -3,23 +3,24 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
-    <title>Amazon</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
+    <title>FAST-KART | SHOES</title>
+    <link href="style2.css" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" href="./images/fast-delivery.png" type="image/x-icon">
   </head>
 
   <body>
-
     <div class="overlay"></div>
 
-    <header class="header">
+    <header class="header" id="header">
       <div class="nav-items">
-        <img
+        <!-- <img
           src="https://static.vecteezy.com/system/resources/previews/019/766/223/original/amazon-logo-amazon-icon-transparent-free-png.png"
           alt=""
           class="img-amz"
-        />
+        /> -->
+        <i class="fa-solid fa-truck-fast fa-2xl" style="color: #ffffff"></i>
 
-        <a href="#" class="home">Home</a>
+        <a href="#" class="home hoverborder">Home</a>
 
         <div class="hello">
           <div class="hello-img">
@@ -42,11 +43,16 @@
             placeholder="Search..."
             type="search"
           />
-          <i class="fa-solid fa-magnifying-glass searchicon"></i>
+          <i
+            class="fa-solid fa-magnifying-glass searchicon"
+            style="color: black"
+          ></i>
         </div>
-        <a href="#" class="retandord"><div>Return & Order</div></a>
+        <a href="#" class="retandord"
+          ><div class="hoverborder">Return & Order</div></a
+        >
 
-        <a href="#" class="cart"
+        <a href="#" class="cart hoverborder"
           ><i class="fa-solid fa-cart-shopping" style="color: #ffffff"></i
         ></a>
 
@@ -61,13 +67,28 @@
       <!-- left product bar -->
       <div class="proicons">
         <button onclick="targetSlide(0)" id="btn1">
-          <img src="./images/img1.jpg" width="50px" height="45px" id="img1" />
+          <img
+            src="https://m.media-amazon.com/images/I/71Hqh3lw84L._AC_UX575_.jpg"
+            width="50px"
+            height="45px"
+            id="img1"
+          />
         </button>
         <button onclick="targetSlide(1)" id="btn2">
-          <img src="./images/img2.jpg" width="50px" height="45px" id="img2" />
+          <img
+            src="https://m.media-amazon.com/images/I/71wk1q6z9GL._AC_UX575_.jpg"
+            width="50px"
+            height="45px"
+            id="img2"
+          />
         </button>
         <button onclick="targetSlide(2)" id="btn3">
-          <img src="./images/img3.jpg" width="50px" height="45px" id="img3" />
+          <img
+            src="https://m.media-amazon.com/images/I/71Jg+td+juL._AC_UX575_.jpg"
+            width="50px"
+            height="45px"
+            id="img3"
+          />
         </button>
         <button onclick="targetSlide(3)" id="btn4">
           <img src="./images/img4.jpg" width="50px" height="45px" id="img4" />
@@ -85,13 +106,17 @@
         <h2>Product Images</h2>
 
         <div class="slide-wrapper">
-          <div id="arrow-left" class="arrow"></div>
+          <div id="arrow-left" class="arrow">
+            <i class="fa-solid fa-less-than fa-2xl"></i>
+          </div>
           <div class="slide slide1"></div>
           <div class="slide slide2"></div>
           <div class="slide slide3"></div>
           <div class="slide slide4"></div>
           <div class="slide slide5"></div>
-          <div id="arrow-right" class="arrow"></div>
+          <div id="arrow-right" class="arrow">
+            <i class="fa-solid fa-greater-than fa-2xl"></i>
+          </div>
         </div>
       </div>
 
@@ -164,7 +189,7 @@
     <!-- Aryan Magdum -->
     <!-- ----------------------------------------------Product Description ---------------------------------------------- -->
     <div class="product-description">
-      <h2>Product Description</h2>
+      <h1>Product Description</h1>
       <div class="product-img">
         <img
           src="./images/product img1.jpg"
@@ -182,7 +207,7 @@
 
       <div class="product-desc-img">
         <button class="btn btn1" onclick="changeImage(1)" id="button1">
-          CLASSIC DESIGN
+          EXCELLENT QUALITY
         </button>
         <button class="btn btn2" onclick="changeImage(2)" id="button2">
           DURABILITY
@@ -200,7 +225,7 @@
         <!-- <button onclick="prev()">Previous</button> -->
         <div class="img img3" class="slider-img">
           <img
-            src="./images/product img3.jpg"
+            src="./images/shoe4.jpg"
             width="100%"
             height="100%"
             id="image1"
@@ -303,15 +328,15 @@
         </div>
       </div>
 
-      <div class="display">
-   
-      </div>
+      <div class="display"></div>
     </div>
 
     <!-- Aryan Magdum -->
     <!-- ----------------------------------------------Footer---------------------------------------------- -->
     <footer>
-      <div class="foot-panel1">Back to Top</div>
+      <a href="#header" style="text-decoration: none"
+        ><div class="foot-panel1">Back to Top</div></a
+      >
 
       <div class="foot-panel2">
         <ul>
@@ -354,13 +379,13 @@
           <a href="">Shipping Rates & Policies</a>
           <a href="">Return & Replacements</a>
           <a href="">Manage Your Content and Devices</a>
-          <a href="">Amazon Assistant</a>
+          <a href="">Assistant</a>
           <a href="">Help</a>
         </ul>
       </div>
 
       <div class="foot-panel3">
-        <div class="logo"></div>
+        <div class="logo"><img src="./images/truck-fast-solid (3).svg" alt="" height="50px" width="50px"></div>
       </div>
 
       <div class="foot-panel4">
@@ -371,15 +396,14 @@
         </div>
 
         <div class="copy-rights">
-          <a href="">© 1996-2023, Amazon.com, Inc. or its affiliates</a>
+          <a href="">© 1996-2023,FAST-KART.company,Inc. or its affiliates</a>
         </div>
       </div>
     </footer>
-    <script src="script.js"></script>
+    <script src="script2.js"></script>
     <script
       src="https://kit.fontawesome.com/51d4845f3c.js"
       crossorigin="anonymous"
     ></script>
   </body>
 </html>
-4
